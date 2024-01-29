@@ -1,0 +1,55 @@
+#speedometer {
+
+    bottom: 2.5rem;
+    right: 4.5rem;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    /*position: relative;
+    */
+}
+
+#car-wheel {
+    position: absolute;
+    text-align: center;
+    padding-top: 75px;
+    padding-left: 25px;
+    z-index: 3;
+    /*width: 100%;
+    height: 350px;
+    padding-top: 20px; */
+}
+
+.wheels {
+    -webkit-animation: spin 5s linear infinite;
+    /* Safari browser */
+    animation: spin 5s linear infinite;
+    opacity: 0.65;
+}
+
+#canvas-block {
+    position: relative;
+    /* z-index: 20; */
+}
+
+@-webkit-keyframes spins {
+    0% {
+        -webkit-transform: rotate(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@keyframes spins {
+
+    /* to the left: 360 - 180 */
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
